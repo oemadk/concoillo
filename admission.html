@@ -64,7 +64,7 @@
     <label for="inputText">Patient Personal Info</label>
     <div style="width: 100%; height: auto;border-radius:10px; ;border: 1px solid #ced4da; margin-bottom:20px;">
         <div style="display:block">
-            <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
+            <div style="display:flex;padding:20px; padding-bottom:0px;flex-wrap: wrap; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
                 <div style="flex:1;padding: 5px;">
                     <div class="textOnInput">
                         <label for="inputText">Name</label>
@@ -83,18 +83,18 @@
                         <input class="form-control" type="number">
                     </div>
                 </div>
-                <div style="flex:1;padding: 5px;">
-                    <div class="textOnInput">
-                        <label for="inputText">Gender</label>
-                        <div style="width: 100%; height: auto;border: 1px solid #ced4da; margin-bottom:20px; padding:7px;">
-                            <input type="checkbox" value="Male">Male
-                            <input type="checkbox" value="Female">Female
-                        </div>
-                    </div>
-                </div>
+<!--                <div style="flex:1;padding: 5px;">-->
+<!--                    <div class="textOnInput">-->
+<!--                        <label for="inputText">Gender</label>-->
+<!--                        <div style="width: 100%; height: auto;border: 1px solid #ced4da; margin-bottom:20px; padding:7px;">-->
+<!--                            <input type="checkbox" value="Male">Male-->
+<!--                            <input type="checkbox" value="Female">Female-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             <div style="display:block">
-                <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
+                <div style="display:flex;padding:20px;padding-bottom:0px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
                     <div style="flex:0.5;padding: 5px;">
                         <div class="textOnInput">
                             <label for="inputText">Height</label>
@@ -169,16 +169,16 @@
                                 <span><input type="checkbox"><b>  Focal deficit</b></span>
                                 <span><input type="checkbox"><b>  Postoperative</b></span>
                             </div>
-                            <div style="display:flex;padding:20px; flex:1; flex-direction: column; align-content:center;margin-bottom:10px;">
-                                <div class="textOnInput" style="margin-top:20px;">
-                                    <label for="inputText" style="margin-left:20px;">Other: </label>
-                                    <div style="width: 100%; height: auto;border-top: 1px solid #ced4da; margin-bottom:20px;">
-                                        <div style="display:block">
-<textarea id="w3review" name="w3review" rows="4">
-List any other reasons or details</textarea></div>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div style="display:flex;padding:20px; flex:1; flex-direction: column; align-content:center;margin-bottom:10px;">-->
+<!--                                <div class="textOnInput" style="margin-top:20px;">-->
+<!--                                    <label for="inputText" style="margin-left:20px;">Other: </label>-->
+<!--                                    <div style="width: 100%; height: auto;border-top: 1px solid #ced4da; margin-bottom:20px;">-->
+<!--                                        <div style="display:block">-->
+<!--<textarea id="w3review" name="w3review" rows="4">-->
+<!--List any other reasons or details</textarea></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -186,113 +186,114 @@ List any other reasons or details</textarea></div>
         </div>
     </div>
 </div>
-<div style="display:flex; flex-direction:row; flex:1">
-    <div style="display:flex;flex-direction:column;flex:2">
-        <div style="display:flex;flex-direction:row;flex:1;     justify-content: space-evenly;">
-            <div class="textOnInput" style="margin-top:20px;">
-                <label for="inputText">Digital Attachements</label>
-                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">
-                    <div style="display:block">
-                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
-                            <div style="flex:1;padding: 5px;">
-                    <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">Clinical report</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">Lab report</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">X-Ray Image</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">CAT Scan Image</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">MRI Image</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">Ultrasound Image</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="textOnInput" style="margin-top:20px;">
-                <label for="inputText">Physically sent with patient</label>
-                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">
-                    <div style="display:block">
-                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
-                            <div style="flex:1;padding: 5px;">
-                    <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> Clinical report</p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> Lab report</p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> X-Ray Image</p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> CAT Scan Image</p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> MRI Image</p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1"><input type="checkbox"> Ultrasound Image</p>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display:flex;flex-direction:row;flex:1">
-            <div style="display:flex;flex-direction:column;flex:1">
-                <div class="textOnInput" style="margin-top:20px;">
-                    <label for="inputText" style="margin-left:20px;">Other: </label>
-                    <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">
-                        <div style="display:block">
-<textarea id="w3review" name="w3review" rows="4">
-List any other reasons or details</textarea></div>
-                    </div>
-                </div>
-            </div>
+<!--<div style="display:flex; flex-direction:row; flex:1">-->
+<!--    <div style="display:flex;flex-direction:column;flex:2">-->
+<!--        <div style="display:flex;flex-direction:row;flex:1;     justify-content: space-evenly;">-->
+<!--            <div class="textOnInput" style="margin-top:20px;">-->
+<!--                <label for="inputText">Digital Attachements</label>-->
+<!--                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">-->
+<!--                    <div style="display:block">-->
+<!--                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">-->
+<!--                            <div style="flex:1;padding: 5px;">-->
+<!--                    <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">Clinical report</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">Lab report</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">X-Ray Image</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">CAT Scan Image</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">MRI Image</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">Ultrasound Image</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>UPLOAD</b></p>-->
+<!--                    </span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="textOnInput" style="margin-top:20px;">-->
+<!--                <label for="inputText">Physically sent with patient</label>-->
+<!--                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">-->
+<!--                    <div style="display:block">-->
+<!--                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">-->
+<!--                            <div style="flex:1;padding: 5px;">-->
+<!--                    <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> Clinical report</p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> Lab report</p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> X-Ray Image</p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> CAT Scan Image</p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> MRI Image</p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1"><input type="checkbox"> Ultrasound Image</p>-->
+<!--                    </span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div style="display:flex;flex-direction:row;flex:1">-->
+<!--            <div style="display:flex;flex-direction:column;flex:1">-->
+<!--                <div class="textOnInput" style="margin-top:20px;">-->
+<!--                    <label for="inputText" style="margin-left:20px;">Other: </label>-->
+<!--                    <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">-->
+<!--                        <div style="display:block">-->
+<!--<textarea id="w3review" name="w3review" rows="4">-->
+<!--List any other reasons or details</textarea></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-        </div>
-    </div>
-    <div style="display:flex;flex-direction:column;flex:1;    justify-content: space-evenly;">
-        <div style="display:flex;flex-direction:row;flex:1">
-            <div class="textOnInput" style="margin-top:20px;">
-                <label for="inputText">Voice Notes</label>
-                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">
-                    <div style="display:block">
-                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">
-                            <div style="flex:1;padding: 5px;">
-                    <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">Voice note 1</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>Duration: 01:30</b></p>
-                    </span>
-                                <span style="display:flex;justify-content: space-between">
-                        <p style="flex:1">Voice note 2</p>
-                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>Duration 02:35</b></p>
-                                </span>
-                                <p style="text-align:center">Press to record</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div style="display:flex;flex-direction:column;flex:1;    justify-content: space-evenly;">-->
+<!--        <div style="display:flex;flex-direction:row;flex:1">-->
+<!--            <div class="textOnInput" style="margin-top:20px;">-->
+<!--                <label for="inputText">Voice Notes</label>-->
+<!--                <div style="width: 100%; height: auto;border-radius:10px;border: 1px solid #ced4da; margin-bottom:20px;">-->
+<!--                    <div style="display:block">-->
+<!--                        <div style="display:flex;padding:20px; flex:1; flex-direction: row; align-content:center;margin-bottom:10px;">-->
+<!--                            <div style="flex:1;padding: 5px;">-->
+<!--                    <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">Voice note 1</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>Duration: 01:30</b></p>-->
+<!--                    </span>-->
+<!--                                <span style="display:flex;justify-content: space-between">-->
+<!--                        <p style="flex:1">Voice note 2</p>-->
+<!--                        <p style="text-decoration:underline; color:#2b9ae9;flex:1; align-self: end; justify-content: end"><b>Duration 02:35</b></p>-->
+<!--                                </span>-->
+<!--                                <p style="text-align:center">Press to record</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<button style="display:flex;padding:20px; float:right;" class="btn btn-outline-primary btn-sm text-center d-flex flex-row justify-content-end" type="button"><a href="messages.html">Admit</a>&nbsp;</button>
 
 </body>
 
