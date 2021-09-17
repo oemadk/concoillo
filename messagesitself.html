@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+</head>
+
+<body>
+<div class="chat col-12 col-md-12 col-lg-12 col-xl-12 px-0 pl-md-1">
+    <div class="chat__container">
+        <div class="chat__wrapper py-2 pt-mb-2 pb-md-3">
+            <div class="chat__messaging messaging-member--online pb-2 pb-md-2 pl-2 pl-md-4 pr-2">
+                <div class="chat__previous d-flex d-md-none">
+                    <a href="messages.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--previous" viewBox="0 0 45.5 30.4">
+                            <path d="M43.5,13.1H7l9.7-9.6A2.1,2.1,0,1,0,13.8.6L.9,13.5h0L.3,14v.6c0,.1-.1.1-.1.2v.4a2,2,0,0,0,.6,1.5l.3.3L13.8,29.8a2.1,2.1,0,1,0,2.9-2.9L7,17.2H43.5a2,2,0,0,0,2-2A2.1,2.1,0,0,0,43.5,13.1Z"
+                                  fill="#f68b3c"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="chat__notification d-flex d-md-none chat__notification--new">
+                    <span>2</span>
+                </div>
+                <div class="chat__infos pl-2 pl-md-0">
+                    <div class="chat-member__wrapper" data-online="true">
+                        <div class="chat-member__avatar">
+                            <img src="https://randomuser.me/api/portraits/thumb/women/56.jpg" alt="Jenny Smith"
+                                 loading="lazy">
+                            <div class="user-status user-status--large"></div>
+                        </div>
+                        <div class="chat-member__details">
+                            <span class="chat-member__name">Jenny Smith</span>
+                            <span class="chat-member__status">Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__actions mr-2 ">
+                    <ul class="m-0">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" viewBox="0 0 48 48">
+                                <path d="M38.4,48c-2.1,0-5.1-.8-9.5-3.2a62.9,62.9,0,0,1-14.6-11A61.7,61.7,0,0,1,3.2,19C-.9,11.8-.3,8.5.7,6.4A9.7,9.7,0,0,1,4.8,2,21.1,21.1,0,0,1,7.8.4h.3c1.8-.7,3-.3,4.9,1.5h.1a40.1,40.1,0,0,1,5.4,8.2c1.3,2.6,1.6,4.3-.2,6.9l-.5.6c-.8,1-.8,1.2-.8,1.6s1.9,3.4,5.2,6.7S28,30.8,28.8,31s.6,0,1.6-.8l.7-.4c2.5-1.9,4.2-1.6,6.8-.3A40.6,40.6,0,0,1,46.1,35h.1c1.8,1.9,2.2,3.1,1.5,4.9v.2h0a21.1,21.1,0,0,1-1.6,3,10,10,0,0,1-4.3,4.1A7.7,7.7,0,0,1,38.4,48ZM9.5,4.1H9.2L6.9,5.4H6.8A6.3,6.3,0,0,0,4.3,8.1c-.3.7-1.2,2.6,2.4,9A58.9,58.9,0,0,0,17.1,30.9,58.2,58.2,0,0,0,30.9,41.3c6.4,3.6,8.4,2.7,9.1,2.4a6.7,6.7,0,0,0,2.5-2.5.1.1,0,0,0,.1-.1c.5-.8.9-1.6,1.3-2.4v-.2l-.5-.6a35.4,35.4,0,0,0-7.3-4.8c-1.7-.8-1.8-.8-2.7-.1l-.6.4A5.3,5.3,0,0,1,28,34.9c-2.9-.6-7.4-4.9-8.7-6.2s-5.6-5.8-6.2-8.7.6-3.6,1.5-4.8l.4-.6c.7-.9.8-1-.1-2.7a35.4,35.4,0,0,0-4.8-7.3Z"
+                                      fill="#f68b3c"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" viewBox="0 0 46.8 47.4">
+                                <path d="M35.8,47.4H11a11,11,0,0,1-11-11V11.6A11,11,0,0,1,11,.6h8.8a2,2,0,1,1,0,4H11a7,7,0,0,0-7,7V36.4a7,7,0,0,0,7,7H35.8a7,7,0,0,0,7-7v-9a2,2,0,1,1,4,0v9A11,11,0,0,1,35.8,47.4Z"
+                                      fill="#f68b3c"/>
+                                <path d="M36.6,20.4A10.2,10.2,0,1,1,46.8,10.2,10.2,10.2,0,0,1,36.6,20.4ZM36.6,4a6.2,6.2,0,1,0,6.2,6.2A6.2,6.2,0,0,0,36.6,4Z"
+                                      fill="#f68b3c"/>
+                            </svg>
+                        </li>
+                        <li class="chat__details d-flex d-xl-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" viewBox="0 0 42.2 11.1">
+                                <g>
+                                    <circle cx="5.6" cy="5.6" r="5.6" fill="#d87232"/>
+                                    <circle cx="21.1" cy="5.6" r="5.6" fill="#d87232"/>
+                                    <circle cx="36.6" cy="5.6" r="5.6" fill="#d87232"/>
+                                </g>
+                            </svg>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="chat__content pt-4 px-3 messageWrapper">
+                <ul class="chat__list-messages " id="messages">
+                    <li>
+                        <div class="chat__time">1 Minute ago</div>
+                        <div class="chat__bubble chat__bubble--you">
+                            Hey, I bought something yesterdat but haven't gotten any confirmation. Do you know I if the
+                            order went through?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat__bubble chat__bubble--me">
+                            Hi! I just checked, your order went through and is on it's way home. Enjoy your new
+                            computer! 😃
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat__bubble chat__bubble--you">
+                            Ohh thanks ! I was really worried about it !
+                        </div>
+                        <div class="chat__bubble chat__bubble--you">
+                            Can't wait for it to be delivered
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat__time">07:14</div>
+                        <div class="chat__bubble chat__bubble--me">
+                            Aenean iaculis massa non lorem dignissim volutpat. Praesent id faucibus lorem, a sagittis
+                            nunc. Duis facilisis lectus vel sapien ultricies, sed placerat augue elementum. In sagittis,
+                            justo nec sodales posuere, nunc est sagittis tellus, eget scelerisque dolor risus vel augue
+                        </div>
+                        <div class="chat__bubble chat__bubble--me">
+                            Is everything alright?
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="chat__bubble chat__bubble--you">
+                            Vestibulum finibus pulvinar quam, at tempus lorem. Pellentesque justo sapien, pulvinar sed
+                            magna et, vulputate commodo nisl. Aenean pharetra ornare turpis. Pellentesque viverra
+                            blandit ullamcorper. Mauris tincidunt ac lacus vel convallis. Vestibulum id nunc nec urna
+                            accumsan dapibus quis ullamcorper massa. Aliquam erat volutpat. Nam mollis mi et arcu
+                            dapibus condimentum.
+                        </div>
+                        <div class="chat__bubble chat__bubble--you">
+                            Nulla facilisi. Duis laoreet dignissim lectus vel maximus
+                        </div>
+                        <div class="chat__bubble chat__bubble--you">
+                            Curabitur volutpat, ipsum a condimentum hendrerit ! 😊
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat__time">09:26</div>
+                        <div class="chat__bubble chat__bubble--me">
+                            Perfect, thanks !
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
+                <div class="custom-form__send-wrapper">
+                    <input type="text" class="form-control custom-form" id="message" placeholder="Ecrivez un message …"
+                           autocomplete="off">
+                    <div class="custom-form__send-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--send-img"
+                             viewBox="0 0 45.7 45.7">
+                            <path d="M6.6,45.7A6.7,6.7,0,0,1,0,39.1V6.6A6.7,6.7,0,0,1,6.6,0H39.1a6.7,6.7,0,0,1,6.6,6.6V39.1h0a6.7,6.7,0,0,1-6.6,6.6ZM39,4H6.6A2.6,2.6,0,0,0,4,6.6V39.1a2.6,2.6,0,0,0,2.6,2.6H39.1a2.6,2.6,0,0,0,2.6-2.6V6.6A2.7,2.7,0,0,0,39,4Zm4.7,35.1Zm-4.6-.4H6.6a2.1,2.1,0,0,1-1.8-1.1,2,2,0,0,1,.3-2.1l8.1-10.4a1.8,1.8,0,0,1,1.5-.8,2.4,2.4,0,0,1,1.6.7l4.2,5.1,6.6-8.5a1.8,1.8,0,0,1,1.6-.8,1.8,1.8,0,0,1,1.5.8L40.7,35.5a2,2,0,0,1,.1,2.1A1.8,1.8,0,0,1,39.1,38.7Zm-17.2-4H35.1l-6.5-8.6-6.5,8.4C22,34.6,22,34.7,21.9,34.7Zm-11.2,0H19l-4.2-5.1Z"
+                                  fill="#f68b3c"/>
+                        </svg>
+                    </div>
+                    <div class="custom-form__send-emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--send-emoji"
+                             viewBox="0 0 46.2 46.2">
+                            <path d="M23.1,0A23.1,23.1,0,1,0,46.2,23.1,23.1,23.1,0,0,0,23.1,0Zm0,41.6A18.5,18.5,0,1,1,41.6,23.1,18.5,18.5,0,0,1,23.1,41.6Zm8.1-20.8a3.5,3.5,0,0,0,3.5-3.5,3.5,3.5,0,0,0-7,0,3.5,3.5,0,0,0,3.5,3.5ZM15,20.8a3.5,3.5,0,0,0,3.5-3.5A3.5,3.5,0,0,0,15,13.9a3.4,3.4,0,0,0-3.4,3.4A3.5,3.5,0,0,0,15,20.8Zm8.1,15a12.6,12.6,0,0,0,10.5-5.5,1.7,1.7,0,0,0-1.3-2.6H14a1.7,1.7,0,0,0-1.4,2.6A12.9,12.9,0,0,0,23.1,35.8Z"
+                                  fill="#f68b3c"/>
+                        </svg>
+                    </div>
+                    <button type="submit" class="custom-form__send-submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--send" viewBox="0 0 45.6 45.6">
+                            <g>
+                                <path d="M20.7,26.7a1.4,1.4,0,0,1-1.2-.6,1.6,1.6,0,0,1,0-2.4L42.6.5a1.8,1.8,0,0,1,2.5,0,1.8,1.8,0,0,1,0,2.5L21.9,26.1A1.6,1.6,0,0,1,20.7,26.7Z"
+                                      fill="#d87232"/>
+                                <path d="M29.1,45.6a1.8,1.8,0,0,1-1.6-1L19.4,26.2,1,18.1a1.9,1.9,0,0,1-1-1.7,1.8,1.8,0,0,1,1.2-1.6L43.3.1a1.7,1.7,0,0,1,1.8.4,1.7,1.7,0,0,1,.4,1.8L30.8,44.4a1.8,1.8,0,0,1-1.6,1.2ZM6.5,16.7l14.9,6.6a2,2,0,0,1,.9.9l6.6,14.9L41,4.6Z"
+                                      fill="#d87232"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script>
+    self.setRooms
+    var accountInfo = {};
+
+    var eventStreamInfo = {
+        from: "END"
+    };
+
+    var roomInfo = [];
+    var memberInfo = [];
+    var viewingRoomId;
+    var sessionid;
+    // ************** Event Streaming **************
+    var longpollEventStream = function () {
+        var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/events?access_token=$token&from=$from";
+        url = url.replace("$token", accountInfo.access_token);
+        url = url.replace("$from", eventStreamInfo.from);
+
+        $.getJSON(url, function (data) {
+            eventStreamInfo.from = data.end;
+
+            var hasNewLatestMessage = false;
+            var updatedMemberList = false;
+            var i = 0;
+            var j = 0;
+            for (i = 0; i < data.chunk.length; ++i) {
+                if (data.chunk[i].type === "m.room.message") {
+                    console.log("Got new message: " + JSON.stringify(data.chunk[i]));
+                    if (viewingRoomId === data.chunk[i].room_id) {
+                        addMessage(data.chunk[i]);
+                    }
+
+                    for (j = 0; j < roomInfo.length; ++j) {
+                        if (roomInfo[j].room_id === data.chunk[i].room_id) {
+                            roomInfo[j].latest_message = data.chunk[i].content.body;
+                            hasNewLatestMessage = true;
+                        }
+                    }
+                } else if (data.chunk[i].type === "m.room.member") {
+                    if (viewingRoomId === data.chunk[i].room_id) {
+                        console.log("Got new member: " + JSON.stringify(data.chunk[i]));
+                        addMessage(data.chunk[i]);
+                        for (j = 0; j < memberInfo.length; ++j) {
+                            if (memberInfo[j].state_key === data.chunk[i].state_key) {
+                                memberInfo[j] = data.chunk[i];
+                                updatedMemberList = true;
+                                break;
+                            }
+                        }
+                        if (!updatedMemberList) {
+                            memberInfo.push(data.chunk[i]);
+                            updatedMemberList = true;
+                        }
+                    }
+                    if (data.chunk[i].state_key === accountInfo.user_id) {
+                        getCurrentRoomList(); // update our join/invite list
+                    }
+                } else {
+                    console.log("Discarding: " + JSON.stringify(data.chunk[i]));
+                }
+            }
+
+            if (hasNewLatestMessage) {
+                setRooms(roomInfo);
+            }
+            if (updatedMemberList) {
+                $("#members").empty();
+                for (i = 0; i < memberInfo.length; ++i) {
+                    addMember(memberInfo[i]);
+                }
+            }
+            longpollEventStream();
+        }).fail(function (err) {
+            setTimeout(longpollEventStream, 5000);
+        });
+    };
+
+    // ************** Registration and Login **************
+    var onLoggedIn = function (data) {
+        accountInfo = data;
+        longpollEventStream();
+        getCurrentRoomList();
+        $(".roomListDashboard").css({visibility: "visible"});
+        $(".roomContents").css({visibility: "visible"});
+        $(".signUp").css({display: "none"});
+    };
+
+    $( document ).on('click','.login', function () {
+        var user = "doctor";
+        var password = "12345678";
+        $.ajax({
+            url: "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/login",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({user: user, password: password, type: "m.login.password"}),
+            dataType: "json",
+            success: function (data) {
+                onLoggedIn(data);
+            },
+            error: function (err) {
+                alert("Unable to login: is the homeserver running?");
+            }
+        });
+    });
+    $( document ).on('click','.register', function () {
+        var user = $("#userReg").val();
+        var password = $("#passwordReg").val();
+        $.ajax({
+            url: "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/r0/register?kind=user",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({username: user, password: password, type: "m.login.password"}),
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                sessionid=data.auth.session;
+                $.ajax({
+                    url: "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/r0/register?kind=user",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify({username: user, password: password, auth:{ session: sessionid,type:"m.login.dummy" },inhibit_login:false}),
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data, 'after registering');
+                    },
+                    error: function (err) {
+                        var msg = "Is the homeserver running?";
+                        var errJson = $.parseJSON(err.responseText);
+                        if (errJson !== null) {
+                            msg = errJson.error;
+                        }
+                        alert("Unable to register: " + msg);
+                    }
+
+                });
+                onLoggedIn(data);
+            },
+            error: function (err) {
+                $.ajax({
+                    url: "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/r0/register?kind=user",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify({username: user, password: password, auth:{ session: sessionid,type:"m.login.dummy" },inhibit_login:false}),
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data, 'after registering');
+                    },
+                    error: function (err) {
+                        var msg = "Is the homeserver running?";
+                        var errJson = $.parseJSON(err.responseText);
+                        if (errJson !== null) {
+                            msg = errJson.error;
+                        }
+                        alert("Unable to register: " + msg);
+                    }
+
+                });
+                onLoggedIn(data);
+            }
+        });
+    });
+
+    // ************** Creating a room ******************
+
+    $(document).on('click','.createRoom', function () {
+        var roomAlias = $("#roomAlias").val();
+        var data = {};
+        if (roomAlias.length > 0) {
+            data.room_alias_name = roomAlias;
+        }
+        $.ajax({
+            url: "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/createRoom?access_token=" + accountInfo.access_token,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+            dataType: "json",
+            success: function (response) {
+                $("#roomAlias").val("");
+                response.membership = "join"; // you are automatically joined into every room you make.
+                response.latest_message = "";
+
+                roomInfo.push(response);
+                setRooms(roomInfo);
+            },
+            error: function (err) {
+                alert(JSON.stringify($.parseJSON(err.responseText)));
+            }
+        });
+    });
+
+    // ************** Getting current state **************
+    var getCurrentRoomList = function () {
+        var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/initialSync?access_token=" + accountInfo.access_token + "&limit=1";
+        $.getJSON(url, function (data) {
+            var rooms = data.rooms;
+            for (var i = 0; i < rooms.length; ++i) {
+                if ("messages" in rooms[i]) {
+                    rooms[i].latest_message = rooms[i].messages.chunk[0].content.body;
+                }
+            }
+            roomInfo = rooms;
+            setRooms(roomInfo);
+        }).fail(function (err) {
+            alert(JSON.stringify($.parseJSON(err.responseText)));
+        });
+    };
+
+    var loadRoomContent = function (roomId) {
+        console.log("loadRoomContent " + roomId);
+        viewingRoomId = roomId;
+        $("#roomName").text("Room: " + roomId);
+        $(".sendMessageForm").css({visibility: "visible"});
+        getMessages(roomId);
+        getMemberList(roomId);
+    };
+
+    var getMessages = function (roomId) {
+        $("#messages").empty();
+        var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/rooms/" +
+            encodeURIComponent(roomId) + "/messages?access_token=" + accountInfo.access_token + "&from=END&dir=b&limit=10";
+        $.getJSON(url, function (data) {
+            for (var i = data.chunk.length - 1; i >= 0; --i) {
+                addMessage(data.chunk[i]);
+            }
+        });
+    };
+
+    var getMemberList = function (roomId) {
+        $("#members").empty();
+        memberInfo = [];
+        var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/rooms/" +
+            encodeURIComponent(roomId) + "/members?access_token=" + accountInfo.access_token;
+        $.getJSON(url, function (data) {
+            for (var i = 0; i < data.chunk.length; ++i) {
+                memberInfo.push(data.chunk[i]);
+                addMember(data.chunk[i]);
+            }
+        });
+    };
+
+    // ************** Sending messages **************
+
+    $(document).on('click','.sendMessage', function () {
+        if (viewingRoomId === undefined) {
+            alert("There is no room to send a message to!");
+            return;
+        }
+        var body = $("#body").val();
+        sendMessage(viewingRoomId, body);
+    });
+    $(document).on('click','.sendRequest', function () {
+        if (viewingRoomId === undefined) {
+            alert("There is no room to send a message to!");
+            return;
+        }
+        var body = "Doctor has requested you to make a CBD Blood exam";
+        sendMessageRequest(viewingRoomId, body);
+    });
+
+    var sendMessage = function (roomId, body) {
+        var msgId = $.now();
+
+        var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/rooms/$roomid/send/m.room.message?access_token=$token";
+        url = url.replace("$token", accountInfo.access_token);
+        url = url.replace("$roomid", encodeURIComponent(roomId));
+
+        var data = {
+            msgtype: "m.text",
+            body: body
+        };
+
+        $.ajax({
+            url: url,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+            dataType: "json",
+            success: function (data) {
+                $("#body").val("");
+            },
+            error: function (err) {
+                alert(JSON.stringify($.parseJSON(err.responseText)));
+            }
+        });
+    };
+
+
+    var sendMessageRequest = function (roomId, body) {
+        var msgId = $.now();
+
+        var url = "http://192.168.56.1:3000/webhook";
+
+
+        var data = {
+            msgtype: "m.text",
+            body: "hello world automatic response"
+        };
+
+        $.ajax({
+            url: url,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+            dataType: "json",
+            success: function (data) {
+                $("#body").val("");
+            },
+            error: function (err) {
+                alert(JSON.stringify($.parseJSON(err.responseText)));
+            }
+        });
+    };
+    // ************** Navigation and DOM manipulation **************
+    var setRooms = function (roomList) {
+        // wipe existing entries
+        $("#rooms").find("tr:gt(0)").remove();
+
+        var rows = "";
+        for (var i = 0; i < roomList.length; ++i) {
+            row = "<tr>" +
+                "<td>" + roomList[i].room_id + "</td>" +
+                "<td>" + roomList[i].membership + "</td>" +
+                "<td>" + roomList[i].latest_message + "</td>" +
+                "</tr>";
+            rows += row;
+        }
+
+        $("#rooms").append(rows);
+
+        $('#rooms').find("tr").click(function () {
+            var roomId = $(this).find('td:eq(0)').text();
+            var membership = $(this).find('td:eq(1)').text();
+            if (membership !== "join") {
+                console.log("Joining room " + roomId);
+                var url = "https://yashfiichat.eastus.cloudapp.azure.com/_matrix/client/api/v1/rooms/$roomid/join?access_token=$token";
+                url = url.replace("$token", accountInfo.access_token);
+                url = url.replace("$roomid", encodeURIComponent(roomId));
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify({membership: "join"}),
+                    dataType: "json",
+                    success: function (data) {
+                        loadRoomContent(roomId);
+                        getCurrentRoomList();
+                    },
+                    error: function (err) {
+                        alert(JSON.stringify($.parseJSON(err.responseText)));
+                    }
+                });
+            } else {
+                loadRoomContent(roomId);
+            }
+        });
+    };
+
+    var addMessage = function (data) {
+
+        var msg = data.content.body;
+        if (data.type === "m.room.member") {
+            if (data.content.membership === undefined) {
+                return;
+            }
+            if (data.content.membership === "invite") {
+                msg = "<em>invited " + data.state_key + " to the room</em>";
+            } else if (data.content.membership === "join") {
+                msg = "<em>joined the room</em>";
+            } else if (data.content.membership === "leave") {
+                msg = "<em>left the room</em>";
+            } else if (data.content.membership === "ban") {
+                msg = "<em>was banned from the room</em>";
+            }
+        }
+        if (msg === undefined) {
+            return;
+        }
+        if (data.user_id !== accountInfo.user_id){
+            console.log(accountInfo.user_id);
+            var row = " <li>\n" +
+                "                        <div class=\"chat__time\">1 Minute ago</div>\n" +
+                "                        <div class=\"chat__bubble chat__bubble--you\">"
+                + msg +
+                "                                            </div>\n" +
+                "                                        </li>";
+            $("#messages").append(row);
+        }else{
+            var row = " <li>\n" +
+                "                        <div class=\"chat__time\">1 Minute ago</div>\n" +
+                "                        <div class=\"chat__bubble chat__bubble--me\">"
+                + msg +
+                "                                            </div>\n" +
+                "                                        </li>";
+            $("#messages").append(row);
+        }
+
+    };
+
+    var addMember = function (data) {
+        var row = "<tr>" +
+            "<td>" + data.state_key + "</td>" +
+            "<td>" + data.content.membership + "</td>" +
+            "</tr>";
+        $("#members").append(row);
+    };
+
+    $("#uploadFile").change(function() {
+        var formData = new FormData();
+        formData.append('file', this.files[0]);
+
+        $("#files").append($("#fileUploadProgressTemplate").tmpl());
+        $("#fileUploadError").addClass("hide");
+
+        $.ajax({
+            url: 'https://yashfiichat.eastus.cloudapp.azure.com/_matrix/media/r0/upload',
+            type: 'POST',
+            xhr: function() {
+                var xhr = $.ajaxSettings.xhr();
+                if (xhr.upload) {
+                    xhr.upload.addEventListener('progress', function(evt) {
+                        var percent = (evt.loaded / evt.total) * 100;
+                        $("#files").find(".progress-bar").width(percent + "%");
+                    }, false);
+                }
+                return xhr;
+            },
+            success: function(data) {
+                $("#files").children().last().remove();
+                $("#files").append($("#fileUploadItemTemplate").tmpl(data));
+                $("#uploadFile").closest("form").trigger("reset");
+            },
+            error: function() {
+                $("#fileUploadError").removeClass("hide").text("An error occured!");
+                $("#files").children().last().remove();
+                $("#uploadFile").closest("form").trigger("reset");
+            },
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false
+        }, 'json');
+    });
+</script>
+<!-- ui old -->
+<div class="signUp">
+    <p>Matrix example application: homeserver running at https://yashfiichat.eastus.cloudapp.azure.com</p>
+    <form class="registrationForm">
+        <p>No account? Register:</p>
+        <input type="text" id="userReg" placeholder="Username"></input>
+        <input type="password" id="passwordReg" placeholder="Password"></input>
+        <input type="button" class="register" value="Register"></input>
+    </form>
+    <form class="loginForm">
+        <input type="button" class="login" value="Start chatting with patient"></input>
+    </form>
+</div>
+
+<div class="roomListDashboard">
+    <form class="createRoomForm">
+        <input type="text" id="roomAlias" placeholder="Room alias"></input>
+        <input type="button" class="createRoom" value="Create Room"></input>
+    </form>
+    <table id="rooms" class="roomList">
+        <tbody>
+        <tr>
+            <th>Room</th>
+            <th>My state</th>
+            <th>Latest message</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="roomContents">
+    <!--    <p id="roomName">Select a room</p>-->
+    <!--    <div class="messageWrapper">-->
+    <!--        <table id="messages">-->
+    <!--            <tbody>-->
+    <!--            </tbody>-->
+    <!--        </table>-->
+    <!--    </div>-->
+    <form class="sendMessageForm">
+        <input type="text" class="textEntry" id="body" placeholder="Enter text here..."
+               onkeydown="javascript:if (event.keyCode == 13) document.getElementById('sendMsg').focus()"></input>
+        <input type="button" class="sendMessage" id="sendMsg" value="Send"></input>
+        <input type="button" class="sendRequest" id="sendRequest1" value="Send Request"></input>
+        <a href="">Continue in full chat experience</a>
+
+        <span class="fileUpload btn btn-default">
+        <span class="glyphicon glyphicon-upload"></span> Upload file
+        <input type="file" id="uploadFile" />
+    </span>
+
+        <p id="fileUploadError" class="text-danger hide"></p>
+
+        <div class="list-group" id="files"></div>
+
+        <script id="fileUploadProgressTemplate" type="text/x-jquery-tmpl">
+    <div class="list-group-item">
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width: 0%;"></div>
+        </div>
+    </div>
+</script>
+
+        <script id="fileUploadItemTemplate" type="text/x-jquery-tmpl">
+    <div class="list-group-item">
+        <button type="button" class="close">&times;</button>
+        <span class="glyphicon glyphicon-file"></span> File name (type, date, etc)
+    </div>
+</script>
+    </form>
+
+</div>
+
+<div>
+    <p>Member list:</p>
+    <div class="membersWrapper">
+        <table id="members">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+
+</html>
